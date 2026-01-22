@@ -1,4 +1,4 @@
-package com.full_events.eventos_api.domain;
+package com.full_events.eventos_api.domain.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,6 +19,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+    private String name;
     private String email;
     private String password;
 
